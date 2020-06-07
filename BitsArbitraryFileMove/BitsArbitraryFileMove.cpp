@@ -437,7 +437,7 @@ BOOL BitsArbitraryFileMove::FindBitsTempFile()
 
 	StringCchCat(m_wszBitsTempFileName, MAX_FILENAME, structWin32FindData.cFileName);
 
-	CloseHandle(hRes);
+	FindClose(hRes);
 
 	return TRUE;
 }
